@@ -3,5 +3,5 @@
 }
 
 .bg {
-	@include modifiers($colors, "color");
+	@include modifiers($colors, "background-color");
 }
