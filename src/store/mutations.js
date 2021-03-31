@@ -44,5 +44,12 @@ export default {
 		state.isPokemonSearch = false;
 		state.listHasError = false;
 		state.searchHasError = false;
+		state.pokemonId = null;
+	},
+
+	// Select Pokemon
+	setPokemonId(id = null) {
+		state.isPokemonSearch = false;
+		state.pokemonId = id;
 	},
 };
