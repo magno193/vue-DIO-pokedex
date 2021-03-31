@@ -65,6 +65,7 @@ export default {
 			setIsSearching(true);
 			setIsPokemonSearch(true);
 
+			// tmpList: Cached list
 			const pokemon = state.tmpList.find(info => info.name.toLowerCase() === name.toLowerCase());
 
 			if (pokemon) {
