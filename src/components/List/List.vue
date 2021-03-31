@@ -27,7 +27,7 @@
 				return state.isPokemonSearch;
 			},
 			hasSearchError() {
-				return state.hasSearchError;
+				return state.searchHasError;
 			},
 		},
 		methods: {
@@ -57,7 +57,7 @@
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
-		border: 10px solid white;
+		border: 10px solid color(white);
 		border-radius: 8px;
 		padding: 0 8px 8px 0;
 		overflow-y: scroll;
@@ -70,7 +70,7 @@
 
 		@media (min-width: $viewport-medium) {
 			max-height: 72%;
-			border: 20px solid white;
+			border: 20px solid color(white);
 		}
 
 		&--message {

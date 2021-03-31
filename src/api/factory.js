@@ -5,14 +5,14 @@ import {
 	responseErrorInterceptor,
 } from './interceptors';
 
-function Factory(baseUrl) {
+function Factory(baseURL) {
 	const instance = axios.create({
-		baseUrl,
+		baseURL,
 	});
 
 	instance.interceptors.request.use(requestInterceptor);
 
-	instance.interceptors.request.use(
+	instance.interceptors.response.use(
 		responseSuccessInterceptor,
 		responseErrorInterceptor,
 	);
