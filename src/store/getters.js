@@ -1,7 +1,7 @@
 import state from './state';
 
 export default {
-	get PokemonsInfo() {
+	get pokemonsInfo() {
 		return state.list.map(info => ({
 			id: info.id,
 			name: info.name,
