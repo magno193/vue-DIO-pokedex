@@ -23,7 +23,7 @@ export default {
 		state.listHasError = flag;
 	},
 	// Adds the pokedex only the searched pokemon
-	addPokemonSearched(pokemon) {
+	setPokemonSearched(pokemon) {
 		state.list = [pokemon];
 	},
 	// Informs that the search is happening
